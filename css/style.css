@@ -112,12 +112,14 @@ nav{
 }
 
 #sobre_texto h5{
+    width: 90%;
     font-size: 28px;
     letter-spacing: 5px;
     font-weight: lighter;
 }
 
 #sobre_texto span{
+    width: 90%;
     font-size: 85px;
     letter-spacing: 2px;
     font-style: italic;
