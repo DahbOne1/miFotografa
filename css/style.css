@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;1,300&display=swap');
+
+/*Estils generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Source Serif Pro', serif;
+}
+
+section{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Estilos del header*/
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    padding: 20px 0;
+    background-color: #0d0d0d;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+
+#menu{
+    gap: 20px;
+}
+
+#menu a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 3px 15px;
+    color: #ffffff;
+}
+
+#icono_camara{
+    display: none;
+}
+
+/*Estilos de la seccion sobre*/
+#sobre{
+    height: 100vh;
+    display: flex;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+#sobre_img{
+    width: 52%;
+    position: relative;
+}
+
+#sobre_img span{
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-size: 60px;
+    z-index: 10;
+}
+
+#sobre_img img{
+    position: absolute;
+}
+
+#sobre_img_uno{
+    top: 10%;
+    left: 10%;
+    width: 50%;
+    height: 60%;
+    object-fit: cover;
+    border: 12px solid black;
+}
+
+#sobre_img_dos{
+    top: 18%;
+    left: 40%;
+    width: 50%;
+    height: 70%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    object-fit: cover;
+}
+
+#sobre_texto{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    gap: 12px;
+    width: 48%;
+}
+
+#sobre_texto h5{
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+#sobre_texto span{
+    font-size: 85px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+#sobre_texto p{
+    font-size: 16px;
+    width: 86%;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+/*Estilos de la seccion servicios*/
+#servicios{
+    background-color: #ffffff;
+    color: #0d0d0d;
+}
+
+#servicios article{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#texto_grupo{
+    padding-bottom: 8px;
+    padding-top: 60px;
+}
+
+#texto_pers{
+    padding-top: 8px;
+    padding-bottom: 60px;
+}
+
+#servicios article img{
+    width: 33%;
+    height: 430px;
+    object-fit: cover;
+}
+
+#servicios article div{
+    width: 33%;
+}
+
+#servicios article div h2{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#servicios article div span{
+    font-size: 28px;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+#servicios article div p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/*Estilos de la seccion galeria*/
+#galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 180px 0;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#galeria span{
+    position: absolute;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+#galeria img{
+    width: 18%;
+}
+
+#insta{
+    top: 29%;
+    left: 10%;
+}
+
+#gram{
+    top: 64%;
+    left: 84%;
+}
+
+/*Estilos de la seccion contacto*/
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: aliceblue;
+}
+
+#contacto img{
+    width: 25%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px -3px rgba(23,23,23,0.86);
+    transition: transform 1s;
+}
+
+#contacto img:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+#contacto ul{
+    gap: 55px;
+    margin-top: 50px;
+}
+
+#contacto ul li i{
+    font-size: 35px;
+    color: #0d0d0db8;
+    transition: color 1s;
+}
+
+#contacto ul li i:hover{
+    color: #0d0d0d;
+}
+
+
+/*Estios del footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer span a{
+    color: #ffffff;
+    font-weight: bolder;
+    
+}
+
+/*Estilos para tablet*/
+@media screen and (max-width: 768px){
+    /*Estilos de la seccion sobre*/
+    #sobre_img_uno{
+        width: 60%;
+        height: 45%;
+        border: 5px solid black;
+    }
+    
+    #sobre_img_dos{
+        left: 35%;
+        width: 60%;
+        height: 60%;
+    }
+    
+    #sobre_texto h5{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    #sobre_texto span{
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+    
+    #sobre_texto p{
+        font-size: 14px;
+        width: 90%;
+        line-height: 25px;
+    }
+
+    /*Estilos de la seccion servicios*/
+    #servicios article div h2{
+        font-size: 12px;
+    }
+
+    #servicios article div span{
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-top: 2px;
+    }
+
+    #servicios article div p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    /*Estilos de la seccion galeria*/
+    #galeria img{
+        width: 20%;
+    }
+
+    #insta{
+        top: 35%;
+        left: 5%;
+    }
+
+    #gram{
+        top: 58%;
+        left: 84%;
+    }
+
+    /*Estilos de la seccion contacto*/
+    #contacto img{
+        width: 50%;
+    }
+
+}
+
+/*Medidas par celular*/
+@media only screen and (min-width: 340px) and (max-width: 425px){
+     /*Estilos del header*/
+    nav{
+        position: relative;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    #icono_camara{
+        font-size: 32px;
+        color: #ffffff;
+        display: inline;
+    }
+
+    #menu{
+        padding-top: 35px;
+        display: none;
+        position: absolute;
+        top: 134%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color:rgba(0, 128, 128, 0.926);
+    }
+
+    nav:hover #menu{
+        display: block;
+        
+    }
+
+    #menu a{
+        font-size: 22px;
+        color: #ffffff;
+        display: block;
+        padding: 20px 0;
+    }
+
+    /*Estilos de la seccion sobre*/
+    #sobre{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #sobre_img{
+        width: 90%;
+        height: 88vh;
+    }
+
+    #sobre_img span{
+        top: 4%;
+        left: 5%;
+        font-size: 60px;
+    }
+
+    #sobre_img_uno{
+        width: 85%;
+        height: 45%;
+    }
+
+    #sobre_img_dos{
+        top: 28%;
+        left: 40%;
+        width: 70%;
+        height: 50%;
+    }
+
+    #sobre_texto{
+        gap: 6px;
+        width: 95%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #sobre_texto h5{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    #sobre_texto span{
+        font-size: 45px;
+        letter-spacing: 0;
+    }
+
+    #sobre_texto p{
+        width: 90%;
+        line-height: 38px;
+    }
+
+    /*Estilos de la seccion servicios*/
+    #servicios article{
+        flex-wrap: wrap;
+    }
+
+    #servicios article:last-child{
+        flex-wrap: wrap-reverse;
+    }
+
+    #servicios article img{
+        width: 90%;
+    }
+
+    #servicios article div{
+        width: 90%;
+    }
+
+    #servicios article div h2{
+        font-size: 13px;
+    }
+
+    #servicios article div span{
+        font-size: 25px;
+    }
+
+    #servicios article div p{
+        font-size: 16px;
+    }
+
+    /*Estilos de la seccion galeria*/
+    #galeria{
+        padding: 80px 0;
+    }
+    
+    #galeria span{
+        font-size: 28px;
+    }
+
+    #galeria img{
+        width: 85%;
+    }
+
+    #insta{
+        top: 6%;
+        left: 5%;
+    }
+
+    #gram{
+        top: 90%;
+        left: 68%;
+    }
+
+    /*Estilos de la seccion contacto*/
+    #contacto img{
+        width: 85%;
+       
+    }
+    
+
+
+}
