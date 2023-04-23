@@ -405,7 +405,7 @@ footer span a{
 
     #sobre_img{
         width: 90%;
-        height: 88vh;
+        height: 100vh;
     }
 
     #sobre_img span{
@@ -431,7 +431,7 @@ footer span a{
     #sobre_texto{
         gap: 6px;
         width: 95%;
-        height: 88vh;
+        height: 100vh;
         align-items: center;
     }
 
