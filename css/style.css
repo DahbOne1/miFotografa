@@ -41,6 +41,10 @@ nav{
     justify-content: end;
 }
 
+img{
+    object-fit: cover;
+}
+
 #menu{
     gap: 20px;
 }
@@ -85,20 +89,18 @@ nav{
 #sobre_img_uno{
     top: 10%;
     left: 10%;
-    width: 50%;
-    height: 60%;
-    object-fit: cover;
+    width: 400px;
+    height: 400px;
     border: 12px solid black;
 }
 
 #sobre_img_dos{
     top: 18%;
     left: 40%;
-    width: 50%;
-    height: 70%;
+    width: 400px;
+    height: 500px;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    object-fit: cover;
 }
 
 #sobre_texto{
@@ -231,11 +233,6 @@ nav{
     transition: transform 1s;
 }
 
-#contacto img:hover{
-    transform: translateY(-8px);
-    cursor: pointer;
-}
-
 #contacto ul{
     gap: 55px;
     margin-top: 50px;
@@ -269,35 +266,57 @@ footer span a{
     
 }
 
-/*Estilos para tablet*/
-@media screen and (max-width: 768px){
-    /*Estilos de la seccion sobre*/
+/*Estilos de laptop grande*/
+@media screen and (max-width: 1025px){
     #sobre_img_uno{
-        width: 60%;
-        height: 45%;
-        border: 5px solid black;
+        top: 15%;
+        width: 350px;
+        height: 350px;
     }
     
     #sobre_img_dos{
-        left: 35%;
-        width: 60%;
-        height: 60%;
+        top: 26%;
+        width: 300px;
+        height: 410px;
+    }
+
+}
+
+/*Estilos para tablet*/
+@media screen and (max-width: 769px){
+    #sobre_img_uno{
+        top: 20%;
+        left: 8%;
     }
     
+    #sobre_img_dos{
+        top: 34%;
+        left: 22%;
+    }
+
+    #sobre_img span{
+        top: 15%;
+    }
+
+    #sobre_texto{
+        justify-content: flex-start;
+    }
+
     #sobre_texto h5{
-        font-size: 20px;
+        margin-top: 14%;
+        font-size: 30px;
         letter-spacing: 3px;
     }
     
     #sobre_texto span{
-        font-size: 50px;
+        font-size: 60px;
         letter-spacing: 1px;
     }
     
     #sobre_texto p{
-        font-size: 14px;
+        font-size: 24px;
         width: 90%;
-        line-height: 25px;
+        line-height: 32px;
     }
 
     /*Estilos de la seccion servicios*/
@@ -338,8 +357,9 @@ footer span a{
 
 }
 
+
 /*Medidas par celular*/
-@media only screen and (min-width: 340px) and (max-width: 425px){
+@media screen and (max-width: 426px){
      /*Estilos del header*/
     nav{
         position: relative;
@@ -380,6 +400,7 @@ footer span a{
     #sobre{
         flex-wrap: wrap;
         height: auto;
+        flex-direction: row-reverse;
     }
 
     #sobre_img{
@@ -389,26 +410,28 @@ footer span a{
 
     #sobre_img span{
         top: 4%;
-        left: 5%;
+        left: 2%;
         font-size: 60px;
     }
 
     #sobre_img_uno{
-        width: 85%;
-        height: 45%;
+        top: 8%;
+        left: 2%;
+        width: 300px;
+        height: 300px;
     }
 
     #sobre_img_dos{
-        top: 28%;
-        left: 40%;
-        width: 70%;
-        height: 50%;
+        top: 38%;
+        left: 3%;
+        width: 280px;
+        height: 400px;
     }
 
     #sobre_texto{
         gap: 6px;
         width: 95%;
-        height: 100vh;
+        height: 88vh;
         align-items: center;
     }
 
