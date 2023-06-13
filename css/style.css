@@ -248,7 +248,6 @@ img{
     color: #0d0d0d;
 }
 
-
 /*Estios del footer*/
 footer{
     display: flex;
@@ -267,31 +266,60 @@ footer span a{
 }
 
 /*Estilos de laptop grande*/
-@media screen and (max-width: 1025px){
-    #sobre_img_uno{
-        top: 15%;
-        width: 350px;
-        height: 350px;
-    }
-    
-    #sobre_img_dos{
-        top: 26%;
-        width: 300px;
-        height: 410px;
+@media screen and (max-width: 1316px){
+    #sobre_texto span{
+        font-size: 55px;
     }
 
+    #sobre_texto p{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 1026px){
+    /*Estilos de la seccion sobre*/
+    #sobre_img span{
+        font-size: 40px;
+    }
+
+    #sobre_img_uno{
+        top: 6%;
+        left: 6%;
+        width: 310px;
+        height: 310px;
+    }
+
+    #sobre_img_dos{
+        top: 15%;
+        left: 35%;
+        width: 270px;
+        height: 340px;
+    }
+
+    #sobre_texto h5{
+        font-size: 24px;
+    }
+    
+    #sobre_texto p{
+       line-height: 25px;
+    }
 }
 
 /*Estilos para tablet*/
 @media screen and (max-width: 769px){
     #sobre_img_uno{
-        top: 20%;
-        left: 8%;
+        top: 10%;
+        left: 4%;
+        width: 300px;
+        height: 300px;
     }
     
     #sobre_img_dos{
-        top: 34%;
-        left: 22%;
+        top: 24%;
+        left: 18%;
+        width: 280px;
+        height: 340px;
     }
 
     #sobre_img span{
@@ -304,19 +332,18 @@ footer span a{
 
     #sobre_texto h5{
         margin-top: 14%;
-        font-size: 30px;
+        font-size: 26px;
         letter-spacing: 3px;
     }
     
     #sobre_texto span{
-        font-size: 60px;
         letter-spacing: 1px;
+        font-size: 45px;
     }
     
     #sobre_texto p{
-        font-size: 24px;
+        font-size: 18px;
         width: 90%;
-        line-height: 32px;
     }
 
     /*Estilos de la seccion servicios*/
@@ -425,7 +452,6 @@ footer span a{
         top: 38%;
         left: 3%;
         width: 280px;
-        height: 400px;
     }
 
     #sobre_texto{
@@ -511,3 +537,31 @@ footer span a{
 
 
 }
+
+@media screen and (max-width: 376px){
+    #sobre_img_uno{
+        width: 260px;
+        height: 260px;
+    }
+
+    #sobre_img_dos{
+        width: 250px;
+        height: 300px; 
+    }
+
+    #sobre_texto p{
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 326px){
+    #sobre_texto p{
+        font-size: 16px;
+    }
+
+    footer span{
+        margin: 5px;
+    }
+}
+
+
